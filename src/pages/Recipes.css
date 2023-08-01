@@ -1,0 +1,55 @@
+/* Recipes.css */
+
+/* Estilos para o container principal */
+.recipes-container {
+    text-align: center;
+  }
+  
+  /* Estilos para o título da página */
+  .recipes-container h1 {
+    font-size: 32px;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para a lista de receitas */
+  .recipes-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Estilos para cada item de receita */
+  .recipes-list-item {
+    background-color: #cae0c3;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  /* Estilos para o título da receita */
+  .recipes-list-item h2 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para a descrição da receita */
+  .recipes-list-item p {
+    color: #666666;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para a imagem da receita */
+  .recipes-list-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  

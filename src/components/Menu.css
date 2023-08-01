@@ -1,0 +1,59 @@
+/* src/components/Menu.css */
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #abf399; /* Cor de fundo do menu */
+  }
+  
+  ul {
+    list-style: none;
+    margin: 10;
+    padding: 0;
+  }
+  
+  li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  li:first-child {
+    margin-left: 0;
+  }
+  
+  nav a { /* Use "nav a" para aplicar estilos apenas aos links dentro do menu */
+    text-decoration: none;
+    color: #000000;
+    padding: 8px 12px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+  }
+  
+  nav a:hover { /* Use "nav a:hover" para estilizar os links do menu ao passar o mouse */
+    background-color: #83e98b;
+    color: #fff;
+  }
+  
+  /* Estilos adicionais para os links de login e cadastro */
+  nav a.login {
+    background-color: #f0f0f0;
+    border: none;
+    color: #333;
+  }
+  
+  nav a.login:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  nav a.cadastro {
+    background-color: #f0f0f0;
+    border: none;
+    color: #333;
+  }
+  
+  nav a.cadastro:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  

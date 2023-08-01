@@ -1,0 +1,36 @@
+{
+    "recipes": [
+      {
+        "id": 1,
+        "name": "Bolo de Chocolate",
+        "description": "Um delicioso bolo de chocolate.",
+        "ingredients": ["farinha", "açúcar", "chocolate", "ovos", "manteiga"],
+        "instructions": "Misture todos os ingredientes e leve ao forno."
+      },
+      {
+        "id": 2,
+        "name": "Bolo de Cenoura",
+        "description": "Um saboroso bolo de cenoura com cobertura de chocolate.",
+        "ingredients": ["cenoura", "açúcar", "farinha", "ovos", "chocolate"],
+        "instructions": "Bata os ingredientes no liquidificador e asse em forno pré-aquecido."
+      },
+      {
+        "id": 3,
+        "name": "Bolo de laranja",
+        "description": "Um saboroso bolo de cenoura com cobertura de chocolate.",
+        "ingredients": ["cenoura", "açúcar", "farinha", "ovos", "chocolate"],
+        "instructions": "Bata os ingredientes no liquidificador e asse em forno pré-aquecido."
+      },
+      {
+        "id": 4,
+        "name": "Bolo de beterraba",
+        "description": "Um saboroso bolo de cenoura com cobertura de chocolate.",
+        "ingredients": ["cenoura", "açúcar", "farinha", "ovos", "chocolate"],
+        "instructions": "Bata os ingredientes no liquidificador e asse em forno pré-aquecido."
+      }
+
+
+      
+    ]
+  }
+  

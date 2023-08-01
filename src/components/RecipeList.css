@@ -1,0 +1,36 @@
+
+/* Estilos para o container principal */
+.Container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para cada item de receita */
+  .RecipeItem {
+    background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para o título da receita */
+  .RecipeItem h4 {
+    margin-bottom: 8px;
+    color: #333333;
+  }
+  
+  /* Estilos para a descrição da receita */
+  .RecipeItem p {
+    color: #666666;
+  }
+  
+  /* Estilos para o título da lista de receitas */
+  h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333333;
+  }
+  
