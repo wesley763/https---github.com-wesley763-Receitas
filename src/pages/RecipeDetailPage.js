@@ -1,9 +1,61 @@
-// src/pages/RecipeDetailsPage.js
-
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
-// Importe o arquivo de estilos RecipeDetailsPage.css
+import styled from 'styled-components';
+
+const Container = styled.div`
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: justify;
+`;
+
+const Title = styled.h2`
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+`;
+
+const Summary = styled.p`
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+`;
+
+const IngredientsList = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+`;
+
+const IngredientItem = styled.li`
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 8px;
+`;
+
+const Instructions = styled.div`
+  font-size: 16px;
+  color: #222;
+  line-height: 1.6;
+  margin-bottom: 20px;
+
+  p {
+    margin-bottom: 10px;
+  }
+`;
+
+const BackLink = styled.div`
+  a {
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+`;
 
 const RecipeDetailsPage = () => {
   const { id } = useParams();
@@ -30,26 +82,23 @@ const RecipeDetailsPage = () => {
   }
 
   return (
-    <div className="container">
-      <h2 className="recipe-title">{recipe.title}</h2>
-      <p className="recipe-summary">{recipe.summary}</p>
+    <Container>
+      <Title>{recipe.title}</Title>
+      <Summary>{recipe.summary}</Summary>
       <h3>Ingredientes:</h3>
-      <ul className="ingredient-list">
+      <IngredientsList>
         {recipe.extendedIngredients.map((ingredient) => (
-          <li key={ingredient.id} className="ingredient-item">
-            {ingredient.original}
-          </li>
+          <IngredientItem key={ingredient.id}>{ingredient.original}</IngredientItem>
         ))}
-      </ul>
+      </IngredientsList>
       <h3>Instruções:</h3>
-      <div
-        className="recipe-instructions"
+      <Instructions
         dangerouslySetInnerHTML={{ __html: recipe.instructions }}
-      ></div>
-      <div className="back-link">
+      ></Instructions>
+      <BackLink>
         <a href="/recipes">Voltar para a lista de receitas</a>
-      </div>
-    </div>
+      </BackLink>
+    </Container>
   );
 };
 

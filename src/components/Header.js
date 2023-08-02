@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Menu.css'; // Importe o arquivo de estilos Menu.css
+import './Menu.css'; 
 
 const Header = () => {
   return (
@@ -16,6 +16,9 @@ const Header = () => {
           </li>
           <li>
             <Link to="/recipes">Receitas</Link>
+          </li>
+          <li>
+            <Link to="/CepForm">CEP</Link>
           </li>
           <li>
             <Link to="/AboutPage">Sobre</Link>
