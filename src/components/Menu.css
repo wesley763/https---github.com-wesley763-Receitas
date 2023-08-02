@@ -1,9 +1,7 @@
-/* src/components/Menu.css */
-
 nav {
     display: flex;
     justify-content: flex-end;
-    background-color: #abf399; /* Cor de fundo do menu */
+    background-color: #abf399; 
   }
   
   ul {
@@ -21,7 +19,7 @@ nav {
     margin-left: 0;
   }
   
-  nav a { /* Use "nav a" para aplicar estilos apenas aos links dentro do menu */
+  nav a { 
     text-decoration: none;
     color: #000000;
     padding: 8px 12px;
@@ -29,12 +27,12 @@ nav {
     border-radius: 4px;
   }
   
-  nav a:hover { /* Use "nav a:hover" para estilizar os links do menu ao passar o mouse */
+  nav a:hover { 
     background-color: #83e98b;
     color: #fff;
   }
   
-  /* Estilos adicionais para os links de login e cadastro */
+  
   nav a.login {
     background-color: #f0f0f0;
     border: none;

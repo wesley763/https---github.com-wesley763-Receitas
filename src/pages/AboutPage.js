@@ -1,39 +1,43 @@
 import React from 'react';
+import styled from 'styled-components';
 import { Container } from '../styles';
-import './AboutPage.css';
 
+const AboutContent = styled.div`
+  p {
+    margin-bottom: 20px;
+  
+    text-align: justify;
+  }
+`;
 
 const AboutPage = () => {
   return (
     <Container>
       <h2>Sobre</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida
-        felis sit amet orci cursus, eget feugiat felis convallis. Sed facilisis
-        sapien vitae purus congue, et bibendum sapien tincidunt. Nam euismod
-        tristique metus, a semper eros lacinia ac. Nullam eu enim vitae mauris
-        varius volutpat.
-      </p>
-      <p>
-        Sed eu erat ex. Nulla ultrices nisl a elit posuere, et iaculis enim
-        tincidunt. Integer ultrices ligula sit amet risus rutrum, non bibendum
-        orci vehicula. Nulla facilisi. Sed aliquam vestibulum nunc at blandit.
-        Fusce quis ipsum sit amet quam congue scelerisque. Proin tincidunt,
-        augue non iaculis venenatis, ligula turpis mattis nisi, vitae finibus
-        arcu dui vel massa. In vulputate ipsum eget felis ultrices, in
-        tristique quam consectetur. Nunc id feugiat magna, eget consectetur
-        ipsum. Duis malesuada arcu eget diam luctus, eget cursus nisl semper.
-        Sed mattis leo at quam iaculis venenatis.
-      </p>
-      <p>
-        Aenean scelerisque, quam non finibus pharetra, ex felis ullamcorper
-        justo, vel interdum velit arcu nec ex. Nullam sed mi et erat iaculis
-        varius nec ut nunc. Pellentesque habitant morbi tristique senectus et
-        netus et malesuada fames ac turpis egestas. Duis nec libero eget velit
-        bibendum venenatis vitae at felis. Vivamus id metus purus. Fusce eu
-        venenatis enim, eu vestibulum dui. Integer vitae nunc ut metus maximus
-        consectetur. Sed at velit eu justo vehicula dignissim.
-      </p>
+      <AboutContent>
+        <p>
+        Seja bem-vindo ao Receitas em Geral, o seu destino para descobrir e
+         compartilhar as melhores receitas! Aqui você encontrará uma variedade
+          incrível de receitas de diferentes culinárias, incluindo pratos salgados,
+           sobremesas deliciosas, bebidas refrescantes e muito mais. Nossa plataforma 
+           foi criada para unir amantes da culinária e proporcionar uma experiência única 
+           na busca por receitas.
+        </p>
+        <p>
+        Navegue pelas categorias e encontre inspirações para o café da manhã,
+         almoço, jantar ou qualquer ocasião especial. Além disso, você também 
+         pode contribuir com a comunidade e compartilhar suas próprias receitas. 
+         Acreditamos que a culinária é uma arte compartilhada, e estamos ansiosos
+          para ver suas criações e dicas úteis. 
+        </p>
+        <p>
+        Seja você um cozinheiro experiente ou um iniciante na cozinha, 
+        estamos aqui para ajudar e inspirar. Então, coloque o avental e vamos
+         começar a explorar o mundo das receitas em geral! Aproveite a jornada
+          culinária e desfrute dos momentos deliciosos que as receitas em geral
+           têm para oferecer. Bom apetite!
+        </p>
+      </AboutContent>
     </Container>
   );
 };
